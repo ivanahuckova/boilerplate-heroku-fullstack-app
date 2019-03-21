@@ -5,8 +5,8 @@ const path = require('path');
 const app = express();
 
 const PORT = process.env.PORT || 8080;
-const pathToIndexHtml = path.join(__dirname, 'build', 'index.html');
-const pathToBuildFolder = path.join(__dirname, 'build');
+const pathToIndexHtml = path.join(__dirname, '../build/index.html');
+const pathToBuildFolder = path.join(__dirname, '../build');
 
 app.use(express.static(pathToBuildFolder));
 
